@@ -9,10 +9,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#4870FB'
   },
   subContainer: {
-    marginTop: 30,
+    marginTop: 25,
     flexDirection: 'row',
     width: '90%',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    alignItems: 'center'
   },
   titleHeader: {
     width: '90%',
@@ -33,12 +34,13 @@ const styles = StyleSheet.create({
   },
   overlay: {
     position: 'absolute',
-    height: 300,
+    height: 270,
     backgroundColor: 'white',
     width: '80%',
     alignSelf: 'center',
     marginTop: 168,
     borderRadius: 35,
+    padding: 30,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
