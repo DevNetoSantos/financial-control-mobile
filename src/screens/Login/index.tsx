@@ -9,4 +9,4 @@ const Login = ({ navigation }: any) => {
   )
 }
 
-export default Login
+export default Login;

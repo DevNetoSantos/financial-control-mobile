@@ -5,6 +5,9 @@ import Login from '../screens/Login';
 import DrawerContent from '../components/DrawerContent';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import CustomDrawerHeader from '../components/CustomDrawerHeader';
+import Card from '../screens/Card';
+import Notifications from '../screens/Notifications';
+import Profile from '../screens/Profile';
 
 
 const Stack = createNativeStackNavigator();
@@ -14,6 +17,9 @@ function StackNavigator() {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name='Login' component={Login} />
       <Stack.Screen name="Home" component={DrawerNavigator} />
+      <Stack.Screen name="Card" component={Card} />
+      <Stack.Screen name="Notifications" component={Notifications} />
+      <Stack.Screen name="Profile" component={Profile} />
     </Stack.Navigator>
   );
 }
