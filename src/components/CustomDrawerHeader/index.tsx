@@ -25,6 +25,10 @@ const CustomDrawerHeader = ({ navigation }: any) => {
         <Text style={styles.textHeader}>Bem vindo(a)</Text>
         <Text style={styles.textHeader}>Usuário</Text>
       </View>
+      {/* viewr sobre header */}
+      <View style={styles.overlay}>
+        <Text>Saldo: 5000</Text>
+      </View>
     </View>
   );
 };
