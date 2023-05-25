@@ -1,21 +1,31 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import Home from '../screens/Home';
 import Login from '../screens/Login';
 
 
 const Stack = createNativeStackNavigator();
 
-function Routes() {
+function StackNavigator() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator /* screenOptions={{ headerShown: false }} */>
-        <Stack.Screen name='Login' component={Login} />
-        <Stack.Screen name="Home" component={Home} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator /* screenOptions={{ headerShown: false }} */>
+      <Stack.Screen name='Login' component={Login} />
+      <Stack.Screen name="Home" component={DrawerNavigator} />
+    </Stack.Navigator>
   );
 }
 
-export default Routes;
+// Navegação de gaveta
+const Drawer = createDrawerNavigator();
+
+function DrawerNavigator() {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="Stack" component={Home} />
+    </Drawer.Navigator>
+  );
+}
+
+
+export { StackNavigator, DrawerNavigator }
