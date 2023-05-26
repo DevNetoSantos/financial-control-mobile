@@ -10,7 +10,7 @@ const Home = ({ navigation }: any) => {
       <View style={styles.areaAccount}>
         <View style={styles.titleHome}>
           <Text style={styles.textTitle}>Minhas despesas</Text>
-          <AntDesign name="right" size={24} color="black" onPress={() => navigation.navigate('Expenses')} />
+          <AntDesign name="right" size={24} color="white" onPress={() => navigation.navigate('Expenses')} />
         </View>
       </View>
       <View style={styles.iconsHome}>

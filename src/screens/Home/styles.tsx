@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   textTitle: {
-    fontSize: 20
+    fontSize: 20,
+    color: 'white'
   }
 });
 
