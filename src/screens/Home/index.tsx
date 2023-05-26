@@ -1,7 +1,6 @@
 import { View, Text, Button } from 'react-native'
 import React from 'react'
 import styles from './styles';
-import { useNavigation } from '@react-navigation/native';
 import { AntDesign, Ionicons, Feather } from '@expo/vector-icons';
 
 const Home = ({ navigation }: any) => {
@@ -9,7 +8,10 @@ const Home = ({ navigation }: any) => {
   return (
     <View style={styles.container}>
       <View style={styles.areaAccount}>
-        <Text>Home</Text>
+        <View style={styles.titleHome}>
+          <Text style={styles.textTitle}>Minhas despesas</Text>
+          <AntDesign name="right" size={24} color="black" onPress={() => navigation.navigate('Expenses')} />
+        </View>
       </View>
       <View style={styles.iconsHome}>
         <AntDesign name="creditcard" size={24} color="black" onPress={() => navigation.navigate('Card')} />

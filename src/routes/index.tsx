@@ -8,6 +8,7 @@ import CustomDrawerHeader from '../components/CustomDrawerHeader';
 import Card from '../screens/Card';
 import Notifications from '../screens/Notifications';
 import Profile from '../screens/Profile';
+import Expenses from '../screens/Expenses';
 
 
 const Stack = createNativeStackNavigator();
@@ -20,11 +21,12 @@ function StackNavigator() {
       <Stack.Screen name="Card" component={Card} />
       <Stack.Screen name="Notifications" component={Notifications} />
       <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Expenses" component={Expenses} />
     </Stack.Navigator>
   );
 }
 
-// Navegação de gaveta
+
 const Drawer = createDrawerNavigator();
 
 function DrawerNavigator() {

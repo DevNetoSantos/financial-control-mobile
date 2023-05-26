@@ -12,7 +12,19 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   areaAccount: {
-    flex: 1
+    flex: 1,
+    padding: 40
+  },
+  titleHome: {
+    backgroundColor: '#4870FB',
+    padding: 40,
+    borderRadius: 35,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  textTitle: {
+    fontSize: 20
   }
 });
 
