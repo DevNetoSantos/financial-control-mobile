@@ -18,6 +18,16 @@ const DrawerContent = () => {
           <Text>@User</Text>
         </View>
       </View>
+      <View style={styles.containerButton}>
+        <View style={styles.categoryButtons}>
+          <Text>Button01</Text>
+          <Text>Button02</Text>
+          <Text>Button03</Text>
+        </View>
+        <View style={styles.sairButton}>
+          <Text>Button Sair</Text>
+        </View>
+      </View>
     </View>
   )
 }

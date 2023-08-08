@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     marginTop: 60,
     alignSelf: 'center',
     width: '90%',
+    flex: 1
   },
   subContainer: {
     padding: 10,
@@ -21,6 +22,16 @@ const styles = StyleSheet.create({
   },
   textName: {
     fontWeight: 'bold'
+  },
+  containerButton: {
+    flex: 1
+  },
+  categoryButtons: {
+    flex: 1,
+    padding: 10
+  },
+  sairButton: {
+    padding: 10
   }
 });
 
