@@ -1,9 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { Image } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
 import styles from './styles'
 
-const DrawerContent = () => {
+const DrawerContent = ({ navigation }: any) => {
   return (
     <View style={styles.container}>
       <View style={styles.subContainer}>
@@ -20,12 +21,18 @@ const DrawerContent = () => {
       </View>
       <View style={styles.containerButton}>
         <View style={styles.categoryButtons}>
-          <Text>Button01</Text>
-          <Text>Button02</Text>
-          <Text>Button03</Text>
+          <View style={styles.catButton01}>
+            <Text style={styles.textButton01}>Transações</Text>
+            <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate('')} />
+          </View>
+          <View style={styles.catButton02}>
+            <Text style={styles.textButton02}>Cartões</Text>
+            <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate('')} />
+          </View>
         </View>
         <View style={styles.sairButton}>
-          <Text>Button Sair</Text>
+          <Text style={styles.textSair}>Sair</Text>
+          <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate('')} />
         </View>
       </View>
     </View>

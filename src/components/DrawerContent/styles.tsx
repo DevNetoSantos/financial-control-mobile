@@ -30,8 +30,43 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10
   },
+  catButton01: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 10,
+  },
+  textButton01: {
+    fontSize: 20,
+  },
+  catButton02: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 10,
+    marginTop: 10,
+  },
+  textButton02: {
+    fontSize: 20,
+  },
   sairButton: {
-    padding: 10
+    padding: 30,
+    marginBottom: 20,
+    borderRadius: 40,
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: 'white',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.8,
+    shadowRadius: 4,
+    elevation: 9,
+  },
+  textSair: {
+    fontSize: 20
   }
 });
 
