@@ -37,7 +37,7 @@ function DrawerNavigator() {
         header: (props) => <CustomDrawerHeader {...props} />,
       }}
       /* header content */
-      drawerContent={() => <DrawerContent />}
+      drawerContent={(props) => <DrawerContent {...props} />}
     >
       <Drawer.Screen name="HomeStack" component={Home} />
     </Drawer.Navigator>

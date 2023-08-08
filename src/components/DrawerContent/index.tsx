@@ -1,7 +1,7 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
-import { Image } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
+
 import styles from './styles'
 
 const DrawerContent = ({ navigation }: any) => {
@@ -21,19 +21,19 @@ const DrawerContent = ({ navigation }: any) => {
       </View>
       <View style={styles.containerButton}>
         <View style={styles.categoryButtons}>
-          <View style={styles.catButton01}>
+          <TouchableOpacity style={styles.catButton01}>
             <Text style={styles.textButton01}>Transações</Text>
-            <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate('')} />
-          </View>
-          <View style={styles.catButton02}>
+            <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate()} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.catButton02}>
             <Text style={styles.textButton02}>Cartões</Text>
-            <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate('')} />
-          </View>
+            <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate()} />
+          </TouchableOpacity>
         </View>
-        <View style={styles.sairButton}>
+        <TouchableOpacity style={styles.sairButton} onPress={() => navigation.navigate('Login')}>
           <Text style={styles.textSair}>Sair</Text>
-          <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate('')} />
-        </View>
+          <AntDesign name="right" size={22} color="blue" />
+        </TouchableOpacity>
       </View>
     </View>
   )
