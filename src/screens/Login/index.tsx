@@ -12,7 +12,7 @@ const Login = ({ navigation }: any) => {
         />
       </View>
       <View>
-        <Text style={styles.textLogin}>Login</Text>
+        {/* <Text style={styles.textLogin}>Login</Text> */}
       </View>
       <View style={styles.areInput}>
         <TextInput style={styles.textInput} placeholder='Digite seu e-mail' />
