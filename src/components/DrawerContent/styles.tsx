@@ -38,6 +38,8 @@ const styles = StyleSheet.create({
   },
   textButton01: {
     fontSize: 20,
+    marginRight: 45,
+    color: '#4870FB'
   },
   catButton02: {
     flexDirection: 'row',
@@ -48,6 +50,8 @@ const styles = StyleSheet.create({
   },
   textButton02: {
     fontSize: 20,
+    marginRight: 75,
+    color: '#4870FB'
   },
   sairButton: {
     padding: 30,
@@ -60,7 +64,8 @@ const styles = StyleSheet.create({
     elevation: 9,
   },
   textSair: {
-    fontSize: 20
+    fontSize: 20,
+    color: '#4870FB'
   }
 });
 

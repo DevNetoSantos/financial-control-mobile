@@ -49,6 +49,16 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.8,
     shadowRadius: 4,
     elevation: 9,
+  },
+  saldo: {
+    color: '#000',
+    fontSize: 20,
+    marginLeft: 10
+  },
+  saldoValue: {
+    fontSize: 30,
+    color: '#4870FB',
+    marginTop: 4
   }
 })
 

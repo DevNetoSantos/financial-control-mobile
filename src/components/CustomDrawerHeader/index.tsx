@@ -27,7 +27,8 @@ const CustomDrawerHeader = ({ navigation }: any) => {
       </View>
       {/* viewr sobre header */}
       <View style={styles.overlay}>
-        <Text>Saldo: 5000</Text>
+        <Text style={styles.saldo}>Seu saldo total</Text>
+        <Text style={styles.saldoValue}> R$ 9.500,00</Text>
       </View>
     </View>
   );

@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, Feather } from '@expo/vector-icons';
 
 import styles from './styles'
 
@@ -16,18 +16,20 @@ const DrawerContent = ({ navigation }: any) => {
         </View>
         <View style={styles.areaText}>
           <Text style={styles.textName}>Usuário da Silva</Text>
-          <Text>@User</Text>
+          <Text>@user</Text>
         </View>
       </View>
       <View style={styles.containerButton}>
         <View style={styles.categoryButtons}>
           <TouchableOpacity style={styles.catButton01}>
+            <Feather name="shuffle" size={20} color="blue" />
             <Text style={styles.textButton01}>Transações</Text>
             <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate()} />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.catButton02}>
+          <TouchableOpacity style={styles.catButton02} onPress={() => navigation.navigate('Card')}>
+            <AntDesign name="creditcard" size={20} color="blue" />
             <Text style={styles.textButton02}>Cartões</Text>
-            <AntDesign name="right" size={22} color="blue" onPress={() => navigation.navigate()} />
+            <AntDesign name="right" size={22} color="blue" />
           </TouchableOpacity>
         </View>
         <TouchableOpacity style={styles.sairButton} onPress={() => navigation.navigate('Login')}>
